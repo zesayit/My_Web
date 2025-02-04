@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Contacto - José Gonçalves</title>
+</head>
+<body>
+    <header>
+        <h1>Currículum Vitae de José Gonçalves</h1>
+        <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
+        <button id="theme-toggle" aria-label="Alternar Tema">🌙</button>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Apresentação</a></li>
+                <li><a href="formacao.html">Formação Académica</a></li>
+                <li><a href="experiencia.html">Experiência Profissional</a></li>
+                <li><a href="trabalhos.html">Estágio Curricular</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contacto</h2>
+            <p>Preencha o formulário abaixo para entrar em contacto comigo:</p>
+            <form action="https://formsubmit.co/leaodragun@gmail.com" method="POST">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 José Gonçalves</p>
+    </footer>
+
+    <!-- Scripts para funcionalidades do site -->
+    <script src="../JAVASCRIPT/menu.js"></script>
+    <script src="../JAVASCRIPT/maps.js"></script>
+    <script src="../JAVASCRIPT/script.js"></script>
+</body>
+</html>

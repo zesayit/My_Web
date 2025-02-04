@@ -1,0 +1,1 @@
+-A pasta 'DCIM' inicialmente continha cerca de 1300 fotografias, o que levou à criação de um script para selecionar os 583 registos específicos, correspondentes às árvores da linha de Fânzeres presentes no site do projeto.

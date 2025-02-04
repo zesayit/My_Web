@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Trabalhos Realizados - José Gonçalves</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <style>
+        #map-estagio {
+            height: 80vh;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Currículum Vitae de José Gonçalves</h1>
+        <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
+        <button id="theme-toggle" aria-label="Alternar Tema">🌙</button>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Apresentação</a></li>
+                <li><a href="formacao.html">Formação Académica</a></li>
+                <li><a href="experiencia.html">Experiência Profissional</a></li>
+                <li><a href="trabalhos.html">Estágio Curricular</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Estágio Curricular no Metro do Porto</h2>
+            <p>Este mapa interativo permite explorar as árvores registadas ao longo da linha de Metro da Fânzeres, visualizar as paragens de metro e analisar as áreas arborizadas através do heatmap.</p>
+            <div id="map-estagio"></div>
+        </section>
+
+        <div id="info-sidebar" class="info-sidebar hidden">
+            <button id="close-sidebar">&times;</button>
+            <div id="sidebar-content">
+                <h3>Informações da Árvore</h3>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 José Gonçalves</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+    <script src="../JAVASCRIPT/menu.js"></script>
+    <script src="../JAVASCRIPT/maps.js"></script>
+    <script src="../JAVASCRIPT/script.js"></script>
+</body>
+</html>

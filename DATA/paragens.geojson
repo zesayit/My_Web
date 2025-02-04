@@ -1,0 +1,14 @@
+{
+"type": "FeatureCollection",
+"name": "paragens",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1, "Paragem": "Estação Fânzeres" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -8.542775722237851, 41.17127212535366 ] ] } },
+{ "type": "Feature", "properties": { "id": 2, "Paragem": "Estação Venda Nova" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -8.541883732541127, 41.175066530550339 ] ] } },
+{ "type": "Feature", "properties": { "id": 3, "Paragem": "Estação Carreira" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -8.543521348702907, 41.179838800482152 ] ] } },
+{ "type": "Feature", "properties": { "id": 4, "Paragem": "Estação Baguim" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -8.545846726704594, 41.185527475762804 ] ] } },
+{ "type": "Feature", "properties": { "id": 5, "Paragem": "Estação Campainha" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -8.55385835954579, 41.183370673551771 ] ] } },
+{ "type": "Feature", "properties": { "id": 6, "Paragem": "Estação Rio Tinto" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -8.560249569729551, 41.179535992677565 ] ] } },
+{ "type": "Feature", "properties": { "id": 7, "Paragem": "Estação Levada" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -8.5621845199285, 41.175722573189503 ] ] } }
+]
+}

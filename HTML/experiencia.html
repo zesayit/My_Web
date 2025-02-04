@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Experiência Profissional - José Gonçalves</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map-trabalho {
+            height: 50vh;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Currículum Vitae de José Gonçalves</h1>
+        <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
+        <button id="theme-toggle" aria-label="Alternar Tema">🌙</button>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Apresentação</a></li>
+                <li><a href="formacao.html">Formação Académica</a></li>
+                <li><a href="experiencia.html">Experiência Profissional</a></li>
+                <li><a href="trabalhos.html">Estágio Curricular</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Experiência Profissional</h2>
+
+            <article>
+                <h3>Supervisor de Operações Florestais</h3>
+                <p>ECOREDE - Gestão de Espaços Verdes e Florestais</p>
+                <a href="https://www.ecorede.pt/" target="_blank">Site da Empresa</a>
+            </article>
+
+            <article>
+                <h3>Operador Aprendiz</h3>
+                <p>IBER KING - Indústria Alimentar</p>
+            </article>
+
+            <article>
+                <h3>Assistente de Cozinha</h3>
+                <p>Talho/Charcutaria RYCKEBOER, Bélgica</p>
+            </article>
+
+            <article>
+                <h3>Voluntariado Jovem para a Natureza e Floresta</h3>
+                <p>Atividades de conservação e educação ambiental.</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Locais Onde Trabalhei</h2>
+            <p>O mapa abaixo mostra os diferentes locais onde desenvolvi a minha experiência profissional.</p>
+            <div id="map-trabalho"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 José Gonçalves</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="../JAVASCRIPT/menu.js"></script>
+    <script src="../JAVASCRIPT/maps.js"></script>
+    <script src="../JAVASCRIPT/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-mode');
+                document.getElementById('theme-toggle').textContent = '☀️';
+            }
+
+            document.getElementById('theme-toggle').addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+                const isDarkMode = document.body.classList.contains('dark-mode');
+                document.getElementById('theme-toggle').textContent = isDarkMode ? '☀️' : '🌙';
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+        });
+    </script>
+</body>
+</html>
